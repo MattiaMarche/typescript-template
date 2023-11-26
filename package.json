@@ -1,0 +1,41 @@
+{
+  "name": "xpm-core",
+  "version": "1.0.0",
+  "description": "Protected and fast package manager.",
+  "main": "index.ts",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp serve",
+    "start": "npm run build && npm run start-server",
+    "start-dev": "npm run watch",
+    "start-server": "http-server ./dist -c-1 -a localhost -o -p 8080",
+    "start-with-watch": "concurrently \"npm run watch\" \"npm run start-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattiaMarche/xpm-core.git"
+  },
+  "keywords": [
+    "package",
+    "manager"
+  ],
+  "author": "Mattia Marchesini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattiaMarche/xpm-core/issues"
+  },
+  "homepage": "https://github.com/MattiaMarche/xpm-core#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-watch": "^5.0.1",
+    "http-server": "^14.1.1",
+    "typescript": "^5.3.2"
+  }
+}

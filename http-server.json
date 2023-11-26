@@ -1,0 +1,6 @@
+{
+    "port": 8080,
+    "root": "./dist",
+    "defaultExt": "html",
+    "startPath": "index.html"
+}
